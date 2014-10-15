@@ -13,7 +13,7 @@
 {
 	if (![[command.arguments objectAtIndex:0] isKindOfClass:[NSNull class]])
 	{
-		[[LocalyticsSession sharedLocalyticsSession] localyticsSession:[command.arguments objectAtIndex:0]];
+		[[LocalyticsSession sharedLocalyticsSession] LocalyticsSession:[command.arguments objectAtIndex:0]];
 	}
 }
 
