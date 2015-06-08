@@ -56,7 +56,7 @@ In your app delegate's implementation, add the following code:
 	
 		[[LocalyticsAmpSession shared] LocalyticsSession:@"<YOUR_APP_KEY>"];
 	    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert];	   
-		[LocalyticsAmpSession shared] handleRemoteNotification:launchOptions]];
+		[[LocalyticsAmpSession shared] handleRemoteNotification:launchOptions];
 	   
 	    return YES;
 	}
